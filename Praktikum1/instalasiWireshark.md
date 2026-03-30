@@ -26,13 +26,13 @@ Digunakan sebagai alat belajar untuk memahami cara kerja berbagai protokol jarin
 # Cara Instalasi Wireshark
 
 1. Download wireshark melalui browser, pilih yang windows x64 installer (kalo pakai windows)
-![Download Wireshark](../image/download1.png)
+![Download Wireshark](../image/modul1&2_ss/download1.png)
 
 2. Setelah proses download selesai lanjut ke instalasi dengan doble klik pada wireshark yang telah didownload
-![Download Wireshark](../image/download2.png)
+![](../image/modul1&2_ss/download2.png)
 
 3. Klik next-next sampai instalasi dilakukan lalu klik finish/selesai
-![Download Wireshark](../image/download3.png)
+![](../image/modul1&2_ss/download3.png)
 
 4. Berikut tampilan setelah proses instalasi dilakukan dan masuk ke aplikasi wireshark
-![Download Wireshark](../image/download4.png)
+![](../image/modul1&2_ss/download4.png)

@@ -11,22 +11,22 @@ Memahami konsep dasar jaringan komputer dan Contoh Penggunaan Wireshark (HTTP).
 Pada modul ini mempelajari bagaimana cara mencari atau memfilter suatu protokol pada wireshark. Sebagain contoh, di sini ingin mencari protokol "HTTP" pada wireshark
 
 1. Pertama buka browser dan mengakses alamat web yang berbasis HTTP (Contoh : https://imada.sdu.dk/~jamik/dm557-19/wireshark/wireshark-http.html)
-![Cara Pakai Wireshark](../image/cara1.png)
+![](../image/modul1&2_ss/cara1.png)
 
 2. Setelah itu buka Wireshark, pada tampilan awal pilih wifi (jika menggunakan wifi namun jika menggunakan LAN bisa pilih ethernet)
-![Cara Pakai Wireshark](../image/cara2.png)
+![](../image/modul1&2_ss/cara2.png)
 
 3. Berikut tampilan setelah memilih opsi wifi
-![Cara Pakai Wireshark](../image/cara3.png)
+![](../image/modul1&2_ss/cara3.png)
 
 4. Pada tampilan tersebut di bagian atas ada kolom yang bisa di gunakan untuk filter suatu protokol yang berguna untuk mempermudah mencari protokol yang ingin di cari, misal kita cari pada kolom tersebut "HTTP"
-![Cara Pakai Wireshark](../image/cara4.png)
+![](../image/modul1&2_ss/cara4.png)
 
 5. Berikut tampilan setelah melakukan filter pencarian "HTTP"
-![Cara Pakai Wireshark](../image/cara5.png)
+![](../image/modul1&2_ss/cara5.png)
 
 6. Tampilan setelah mencari protokol "HTTP"
-![Cara Pakai Wireshark](../image/cara6.png)
+![](../image/modul1&2_ss/cara6.png)
 
 # Penjelasan 
 
