@@ -56,6 +56,7 @@ Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 
 1) Buka command prompt (CMD) dan ketikan nslookup www.mit.edu
+
 ![](../image/modul4_ss/tracdns7.png)
 
 2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dan Standard query response dari www.mit.edu
