@@ -87,5 +87,48 @@ Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
     ![](../image/modul4_ss/tracdns13.png)
 
 ### C. Analisis DNS Record NS Menggunakan nslookup (mit.edu)
+Berikut langkah-langkah untuk analisis DNS Record NS menggunakan nslookup (mit.edu):
 
-### D. Analisis DNS Menggunakan Server Tertentu (www.aiit.or.kr bitsy.mit.edu)
+1) Buka command prompt (CMD) dan ketikan nslookup -type=NS mit.edu
+![](../image/modul4_ss/tracdns14.png)
+
+2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dari www.mit.edu
+![](../image/modul4_ss/tracdns15.png)
+
+### Menjawab Pertanyaan
+
+1. Alamat IP request
+    Jawab: Request DNS dikirim ke alamat IP fe80::6 yang merupakan DNS default pada jaringan
+    ![](../image/modul4_ss/tracdns16.png)
+
+2. Type dan answers request
+    Jawab: Tipe DNS request adalah NS. Pesan ini tidak mengandung jawaban karena hanya berupa permintaan
+    ![](../image/modul4_ss/tracdns17.png)
+
+3. Answers response
+    Jawab: Pada DNS response, diperoleh beberapa nama server MIT. Pesan balasan ini umumnya hanya menampilkan nama server (NS record), dan tidak alamat IP secara langsung pada bagian answers
+    ![](../image/modul4_ss/tracdns18.png)
+    ![](../image/modul4_ss/tracdns19.png)
+
+### D. Analisis DNS Menggunakan Server Tertentu, misal (www.aiit.or.kr bitsy.mit.edu)
+Berikut langkah-langkah untuk analisis DNS Record NS menggunakan server tertentu, misal (www.aiit.or.kr bitsy.mit.edu):
+
+1) Buka command prompt (CMD) dan ketikan nslookup www.aiit.or.kr bitsy.mit.edu
+![](../image/modul4_ss/tracdns20.png)
+
+2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dari www.aiit.or.kr
+![](../image/modul4_ss/tracdns20.png)
+
+### Menjawab Pertanyaan
+
+1. Alamat IP request
+    Jawab: Pesan permintaan DNS dikirim ke alamat IP 18.0.72.3. Alamat tersebut merupakan server bitsy.mit.edu yang ditentukan secara manual pada perintah nslookup, sehingga bukan merupakan DNS server lokal
+    ![](../image/modul4_ss/tracdns21.png)
+
+2. Type dan answers request
+    Jawab: Tipe DNS request adalah A (Address Record). Pesan ini tidak mengandung jawaban karena hanya berupa permintaan
+    ![](../image/modul4_ss/tracdns23.png)
+
+3. Answers response Berdasarkan hasil pada Command Prompt, terlihat bahwa terjadi “DNS request timed out”, yang menunjukkan bahwa server DNS tidak merespon permintaan yang dikirimkan
+    Jawab: Tidak terdapat pesan balasan (DNS response) pada percobaan ini. Hal ini dikarenakan permintaan DNS mengalami timeout, sehingga server bitsy.mit.edu tidak memberikan respon terhadap query yang dikirimkan. Akibatnya, tidak terdapat answers yang dapat dianalisis
+    ![](../image/modul4_ss/tracdns24.png)
