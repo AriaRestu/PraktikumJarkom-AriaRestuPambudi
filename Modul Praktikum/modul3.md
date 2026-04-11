@@ -1,6 +1,6 @@
 # MODUL 3
 
-## Modul 3.2 Interaksi Dasar HTTP GET/Response
+## 1. Interaksi Dasar HTTP GET/Response
 Pada praktikum week 2 ini masih melanjutkan pembahasan pada modul 3 mengenai HTTP. Namun, pada bagian ini lebih difokuskan pada pemahaman tentang interaksi dasar antara HTTP GET dan response yang terjadi antara client dan server.
 
 ## Langkah-langkah Percobaan
@@ -39,7 +39,7 @@ http://gaia.cs.umass.edu/wireshark-labsrfiioef/HTTP-wireshark-file1.html
 
 ---
 
-## Modul 3.3 Mengambil Dokumen Berukuran Besar (Retrieving Long Documents)
+## 2. Mengambil Dokumen Berukuran Besar (Retrieving Long Documents)
 Pada bagian ini membahas proses pengambilan data berukuran besar, seperti halaman web atau file, melalui jaringan. Proses ini dapat diamati melalui hasil capture paket menggunakan protokol seperti HTTP, TCP, maupun FTP.
 
 ## Langkah-langkah Percobaan
@@ -55,7 +55,7 @@ http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
 
 ---
 
-## Modul 3.4 Dokumen HTML dengan Embedded Objects
+## 3. Dokumen HTML dengan Embedded Objects
 Pada modul ini mempelajari dokumen HTML yang memiliki objek tambahan seperti gambar, CSS, atau JavaScript. Ketika halaman dibuka, browser akan mengirim beberapa request HTTP untuk mengambil semua elemen tersebut, yang dapat diamati melalui Wireshark.
 
 ## Langkah-langkah Percobaan
@@ -71,7 +71,7 @@ http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html
 
 ---
 
-## Modul 3.5 HTTP Authentication
+## 4. HTTP Authentication
 Pada bagian ini membahas proses autentikasi HTTP, yaitu mekanisme login ketika client mengakses halaman yang memerlukan username dan password. Proses ini dapat diamati melalui paket HTTP yang ditangkap oleh Wireshark.
 
 ## Langkah-langkah Percobaan
