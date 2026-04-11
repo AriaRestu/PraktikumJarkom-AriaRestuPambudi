@@ -2,17 +2,20 @@
 UDP (User Datagram Protocol) merupakan salah satu protokol pada lapisan transport di model TCP/IP yang berfungsi untuk mengirim data secara tanpa koneksi (connectionless). Ini berarti UDP mengirimkan data tanpa harus melakukan proses pembentukan koneksi terlebih dahulu sebelum transmisi berlangsung.
 
 ## Langkah-Langkah Praktikum
-
 1. Download file http://gaia.cs.umass.edu/wireshark-labs/wireshark-traces.zip
+    
     ![](../image/modul5_ss/udp1.png)
 
 2. Extract file dan cari file http-ethereal-trace-5
+    
     ![](../image/modul5_ss/udp2.png)
 
 3. Klik kanan pada file tersebut, kemudian buka dengan wireshark
+    
     ![](../image/modul5_ss/udp3.png)
 
 4. Lakukan filter UDP dan pilih salah satu paket UDP
+    
     ![](../image/modul5_ss/udp4.png)
 
 ### Menjawab Pertanyaan
