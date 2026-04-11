@@ -7,12 +7,15 @@ UDP (User Datagram Protocol) merupakan salah satu protokol pada lapisan transpor
 ![](../image/modul5_ss/udp1.png)
 
 2. Extract file dan cari file http-ethereal-trace-5
+
 ![](../image/modul5_ss/udp2.png)
 
 3. Klik kanan pada file tersebut, kemudian buka dengan wireshark
+
 ![](../image/modul5_ss/udp3.png)
 
 4. Lakukan filter UDP dan pilih salah satu paket UDP
+
 ![](../image/modul5_ss/udp4.png)
 
 ### Menjawab Pertanyaan
