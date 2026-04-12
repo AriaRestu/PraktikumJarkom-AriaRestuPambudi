@@ -14,6 +14,34 @@ Nslookup merupakan perintah yang digunakan untuk melakukan query ke server DNS g
 3) Perintah nslookup www.aiit.or.kr bitsy.mit.edu digunakan untuk melakukan pencarian informasi DNS terhadap domain www.aiit.or.kr dengan menggunakan server DNS tertentu, yaitu bitsy.mit.edu, sebagai tujuan query.
 ![](../image/modul4_ss/nslookup3.png)
 
+#### Menjawab Pertanyaan
+
+1. Mencari IP server web di Asia
+    Jawab:
+    - Perintah : nslookup www.nus.edu.sg
+    - Domain : www.nus.edu.sg
+    - Alamat IP : 45.60.35.225
+
+    ![](../image/modul4_ss/soalns1.png)
+
+2. Mencari DNS otoritatif universitas di Eropa
+    Jawab:
+    - Perintah : nslookup -type=NS ox.ac.uk
+    - DNS server : dns0.ox.ac.uk, auth6.dns.ox.ac.uk, dns1.ox.ac.uk, dns2.ox.ac.uk, auth5.dns.ox.ac.uk, auth4.dns.ox.ac.uk
+    ![](../image/modul4_ss/soalns2.png)
+
+3. Mencari mail server Yahoo melalui DNS tertentu
+    Jawab:
+    - Perintah : nslookup -type=MX yahoo.com 8.8.8.8
+    - Hasil : Terdapat 3 mail server pada yahoo.com
+
+    ![](../image/modul4_ss/soalns3.png)
+    - Perintah : nslookup -type=MX yahoo.com dns0.ox.ac.uk
+    - Hasil : Permintaan tidak berhasil karena server DNS dns0.ox.ac.uk merupakan authoritative DNS yang hanya melayani domain ox.ac.uk, sehingga menolak permintaan untuk domain lain seperti yahoo.com
+
+    ![](../image/modul4_ss/soalns4.png)
+
+
 ## 2. Ipconfig
 Ipconfig berguna untuk mengelola informasi DNS yang tersimpan dalam host. Yang mana host dapat menyimpan catatan DNS yang baru saja diperolehnya. Untuk melihat record yang telah disimpan, setelah prompt C:\> masukkan  perintah berikut:
 
@@ -90,7 +118,8 @@ Berikut langkah-langkah untuk tracing DNS dengan Wireshark:
 Berikut langkah-langkah untuk analisis DNS Record NS menggunakan nslookup (mit.edu):
 
 1) Buka command prompt (CMD) dan ketikan nslookup -type=NS mit.edu
-![](../image/modul4_ss/trackdns14.png)
+
+    ![](../image/modul4_ss/trackdns14.png)
 
 2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dari www.mit.edu
 ![](../image/modul4_ss/trackdns15.png)
@@ -107,6 +136,7 @@ Berikut langkah-langkah untuk analisis DNS Record NS menggunakan nslookup (mit.e
 
 3. Answers response
     Jawab: Pada DNS response, diperoleh beberapa nama server MIT. Pesan balasan ini umumnya hanya menampilkan nama server (NS record), dan tidak alamat IP secara langsung pada bagian answers
+    
     ![](../image/modul4_ss/trackdns18.png)
     ![](../image/modul4_ss/trackdns19.png)
 
@@ -117,13 +147,13 @@ Berikut langkah-langkah untuk analisis DNS Record NS menggunakan server tertentu
 ![](../image/modul4_ss/trackdns20.png)
 
 2) Buka aplikasi wireshark kemudian pilih jaringan wifi, karena kita menggunakan wifi. Setelah itu filter DNS, lalu ambil data dari Standard query (request) dari www.aiit.or.kr
-![](../image/modul4_ss/trackdns20.png)
+![](../image/modul4_ss/trackdns21.png)
 
 ### Menjawab Pertanyaan
 
 1. Alamat IP request
     Jawab: Pesan permintaan DNS dikirim ke alamat IP 18.0.72.3. Alamat tersebut merupakan server bitsy.mit.edu yang ditentukan secara manual pada perintah nslookup, sehingga bukan merupakan DNS server lokal
-    ![](../image/modul4_ss/trackdns21.png)
+    ![](../image/modul4_ss/trackdns22.png)
 
 2. Type dan answers request
     Jawab: Tipe DNS request adalah A (Address Record). Pesan ini tidak mengandung jawaban karena hanya berupa permintaan
