@@ -1,4 +1,4 @@
-# MODUL 10 : IP
+# IP
 
 IP Address (Internet Protocol Address) merupakan alamat unik yang digunakan untuk mengidentifikasi perangkat pada suatu jaringan, baik jaringan lokal maupun internet. Fungsi utama IP Address adalah memastikan data dapat dikirim ke perangkat tujuan yang tepat. Secara umum IP Address dibagi menjadi dua jenis, yaitu IPv4 yang menggunakan 32-bit alamat dan IPv6 yang menggunakan 128-bit alamat.
 
