@@ -1,4 +1,4 @@
-# MODUL 9 : WEB SERVER
+WEB SERVER
 Web server merupakan komponen yang berperan dalam melayani komunikasi antara klien dan server pada jaringan internet. Tugas utamanya adalah menerima permintaan dari pengguna melalui browser, kemudian mengirimkan respons berupa halaman web atau data yang diminta. Komunikasi tersebut umumnya menggunakan protokol HTTP yang berjalan di atas TCP sehingga proses pertukaran data dapat berlangsung dengan baik dan terjamin.
 
 ## Berikut Langkah Membuat Web Server Sederhana
